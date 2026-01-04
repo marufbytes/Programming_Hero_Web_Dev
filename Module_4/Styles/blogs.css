@@ -1,0 +1,13 @@
+nav li a{
+    text-decoration: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+
+nav li:hover{
+    background-color: aquamarine;
+}
