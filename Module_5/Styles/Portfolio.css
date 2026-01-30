@@ -51,7 +51,7 @@ font-size: 45px;
 header{
     background-color: #FFF8F3;
     background: url("../images/developer.png"),url("../images/header_bg.png"), #FFF8F3;
-    background-position: top left, bottom right;
+    background-position: 23px 38px, bottom right;
     background-repeat: no-repeat;
     padding: 50px 50px 0 50px;
 }
@@ -276,8 +276,7 @@ margin-bottom: 20px;
     margin-right: 24px;
 }
 
-.footer-container form input[type="text"], 
-.footer-container form textarea{
+.footer-container form input[type="text"], .footer-container form textarea{
     width: 461px;
     padding: 18px 31px;
     margin-bottom: 24px;
