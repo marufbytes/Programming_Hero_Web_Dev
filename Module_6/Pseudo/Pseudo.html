@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=">
+    <title>Pseudo</title>
+    <style>
+        h2{
+            color: tomato;
+
+        }
+        h2:hover{
+            color: gray;
+            background-color: skyblue;
+        }
+
+        input:focus{
+            color: blue;
+            padding-left: 20px;
+            outline: 0;
+            border: 1px solid rgb(202, 70, 202);
+        }
+        a:visited{
+            color: rgb(81, 81, 81);
+        }
+        li:last-child{
+            color: black;
+        }
+        li:first-child{
+            color: blue;
+        }
+        li:nth-child(2n){
+            color: red
+            ;
+        }
+        li:nth-child(2n+3){
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>My heading</h2>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <br>
+    <br>
+    <a href="https://google.com/">Google</a>
+
+    <ul>
+        <li>available</li>
+        <li>adsfadsf</li>
+        <li>adfghs</li>
+        <li>sfgs</li>
+        <li>sfdgsfg</li>
+        <li>sfdgshg</li>
+        <li>sdftgwsert</li>
+    </ul>
+</body>
+</html>
