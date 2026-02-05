@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        body {
+            border: 1px solid black;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .image_container{
+            display: flex;
+        }
+
+        .image_container div{
+            width: 50%;
+        }
+
+        .image_container img{
+            width: 100%;
+        }
+
+        @media screen and (max-width:576px){
+            .image_container{
+                flex-direction: column;
+            }
+            .image_container div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsive websites</h1>
+    <header>
+        <ol>
+            <li>Viewport meta tag</li>
+            <li>CSS Relative Unit</li>
+            <li>body max width howizontal center align</li>
+            <li>Image fluid</li>
+            <li>Media Query</li>
+            <li>Multi column: grid layout</li>
+            <li>menu response</li>
+        </ol>
+    </header>
+
+    <main>
+        <div class="image_container">
+            <div>
+                <img src="../7_5/OIP (2).webp" alt="">
+
+            </div>
+            <div>
+                <img src="OIP (3).webp" alt="">
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
