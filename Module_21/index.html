@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+
+    <header>
+        <h1>This is my header no banner</h1>
+    </header>
+
+    <main>
+        <h1>Welcome to my DOM</h1>
+        <ul>
+            <li>Shafayet</li>
+            <li>Bobobash</li>
+            <li>Jalali</li>
+            <li>Dom dee</li>
+        </ul>
+    </main>
+    
+
+    <script>
+        // console.log("Document Object Model");
+        const student = {
+            name: "Maruf ahammed",
+            id: 2220864,
+            study: function (subject){
+                console.log("Studying subject:",subject);
+            }
+        }
+
+    // document.detElementsByTagName
+
+    const liCollection = document.getElementsByTagName('li');
+    console.log(liCollection);
+
+    for(const li of liCollection){
+        console.log(li.innerText)
+    }
+
+
+    // All hadings
+    const allHeadings = document.getElementsByTagName('h1');
+    for(const heading of allHeadings){
+        console.log(heading.innerText);
+    }
+    </script>
+</body>
+</html>
