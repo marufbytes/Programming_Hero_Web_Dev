@@ -1,2 +1,3 @@
-console.log("Hello from outside!");
-console.log(document);
+// console.log("Hello from outside!");
+// console.log(document);
+ 

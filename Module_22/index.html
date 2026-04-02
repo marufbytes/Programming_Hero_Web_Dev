@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
-    <link rel="stylesheet" href="Styles/tyle.css">
-
-    <style>
-        h1{
-            color: green;
-        }
-    </style>
-
+    <title>Dom</title>
 </head>
 
 <body>
 
-    <header><h1>This is my header no banner</h1></header>
+    <header>
+        <h1>This is my header no banner</h1>
+    </header>
+
     <main>
-        <h1>Welcome to my DOM</h1>
-        <ul>
-            <li>Shafayed</li>
-            <li>Jalali</li>
-            <li>Bonobash</li>
-        </ul>
+
+        <section id="old-dhaka">
+            <h1>Welcome to my DOM</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum earum veniam, vitae libero <span>Oli goli</span> inventore placeat reiciendis totam veritatis, excepturi fugit sint iure eos consequuntur. Accusamus praesentium necessitatibus commodi tempora molestias!
+            </p>
+
+            <h1>Some teadngn akeggh akdgk <span>dfakdf</span>dkja dadf dafd</h1>
+        </section>
+
+        <section class="songs">
+            <h1>Welcome to my DOM</h1>
+            <ul>
+                <li>Shafayet</li>
+                <li>Bobobash</li>
+                <li>Jalali</li>
+                <li>Dom dee</li>
+            </ul>
+
+            <section class="food">
+                <h1 id="f1">Foodes I love</h1>
+                <ul>
+                    <li>Rice</li>
+                    <li>Potato</li>
+                    <li>Fish</li>
+                    <li>Daal</li>
+                    <li class="foreign">Burger</li>
+                    <li class="foreign">Pizza</li>
+                    <li class="foreign">Pasta</li>
+                </ul>
+            </section>
+        </section>
+
+
+
     </main>
 
+
     <script>
-        console.log("Hello Javascirpt");
-        console.log("Hello World!")
+        // console.log("Document Object Model");
+        const student = {
+            name: "Maruf ahammed",
+            id: 2220864,
+            study: function (subject) {
+                console.log("Studying subject:", subject);
+            }
+        }
+
+        // document.detElementsByTagName
+
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+
+        for (const li of liCollection) {
+            console.log(li.innerText)
+        }
+
+
+        // All hadings
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const heading of allHeadings) {
+            console.log(heading.innerText);
+        }
+
+        const foodtitleH1 = document.getElementById('f1');
+        console.log(f1.innerText);
+
+        const foreignElements = document.getElementsByClassName('foreign');
+        console.log(foreignElements);
+
+        for (const element of foreignElements) {
+            console.log(element.innerText);
+        }
+
+        const spalElement = document.querySelectorAll('#old-dhaka');
+        for (const span of spalElement){
+            console.log(span.innerText);
+        }
     </script>
     <script src="js/hello.js"></script>
-
 </body>
+
 </html>
