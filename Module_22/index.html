@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
+    <link rel="stylesheet" href="Styles/tyle.css">
     <style>
         h1{color: gold;}
 
@@ -56,7 +57,7 @@
 
             <section class="food">
                 <h1 id="food-title">Foodes I love</h1>
-                <ul>
+                <ul id="player-list">
                     <li>Rice</li>
                     <li>Potato</li>
                     <li>Fish</li>
@@ -66,6 +67,16 @@
                     <li class="foreign">Pasta</li>
                 </ul>
             </section>
+        </section>
+
+        <section id="players-container">
+            <h1>Players</h1>
+            <ul>
+                <li>Messsi</li>
+                <li>Neymar</li>
+                <li>Ronaldo</li>
+                <li>Mbappe</li>
+            </ul>
         </section>
 
 
@@ -85,36 +96,40 @@
 
         // document.detElementsByTagName
 
-        const liCollection = document.getElementsByTagName('li');
-        console.log(liCollection);
+        // const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
 
         for (const li of liCollection) {
-            console.log(li.innerText)
+            // console.log(li.innerText)
         }
 
 
         // All hadings
         const allHeadings = document.getElementsByTagName('h1');
         for (const heading of allHeadings) {
-            console.log(heading.innerText);
+            // console.log(heading.innerText);
         }
 
         const foodtitleH1 = document.getElementById('f1');
-        console.log(f1.innerText);
+        // console.log(f1.innerText);
 
         const foreignElements = document.getElementsByClassName('foreign');
-        console.log(foreignElements);
+        // console.log(foreignElements);
 
         for (const element of foreignElements) {
-            console.log(element.innerText);
+            // console.log(element.innerText);
         }
 
         const spalElement = document.querySelectorAll('#old-dhaka');
         for (const span of spalElement){
-            console.log(span.innerText);
+            // console.log(span.innerText);
         }
     </script>
+
     <script src="js/hello.js"></script>
+    <script src="js/cssInJs.js"></script>
+    <script src="js/child.js"></script>
+
 </body>
 
 </html>
