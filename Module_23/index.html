@@ -5,16 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Events</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <h1>Dom domadom Event</h1>
-    
+
+    <!-- Option 1 for event handler -->
     <button onclick="console.log(7)">Click Me</button>
     <button onclick="console.log(63)">Another Button</button>
     <button onclick="console.log('I am clicked')">Third button</button>
     <input type="text">
+    <br>
 
+    <button onclick="makeRed()">Make Red</button>
+    <button onclick="makeYellow()">Make Yellow</button>
+
+    <button id="btn-make-blue">Make Blue</button>
+
+    <button id="btn-make-purple">Make Purple</button>
+    
+    <script>
+        const btnMakePurple = document.getElementById('btn-make-purple');
+        btnMakePurple.onclick=makePurple();
+        function makePurple(){
+            document.body.style.backgroundColor='purple';
+
+        }
+    </script>
 
     <script src="js/event.js"></script>
 </body>
