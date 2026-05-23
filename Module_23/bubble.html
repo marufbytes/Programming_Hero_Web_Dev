@@ -47,6 +47,16 @@
         document.getElementById('item-2')
             .addEventListener('click', function () {
                 console.log('item 2 clicked');
+                // event.stopPropagation()
+                // event.stopImmediatePropagation()
+            })
+        document.getElementById('item-2')
+            .addEventListener('click', function () {
+                console.log('item 2 2nd clicked');
+            })
+        document.getElementById('item-2')
+            .addEventListener('click', function () {
+                console.log('item 2 3rd clicked');
             })
         document.getElementById('item-list')
             .addEventListener('click', function () {
