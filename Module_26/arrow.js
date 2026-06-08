@@ -28,3 +28,6 @@ const doMath=(x,y)=>{
 // document.getElementById('btn').addEventListener('click',()=>{
 
 // })
+document.getElementById('btn').addEventListener('click',()=>{
+
+})
