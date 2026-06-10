@@ -1,1 +1,0 @@
-console.log("In the outside", output);
