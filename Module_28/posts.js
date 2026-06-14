@@ -10,7 +10,7 @@ const loadPost = () => {
 
 const displayPost = (posts) => {
     // 1. Get the container & empty the container
-    const postContainer = document.getElementById('post-container');
+    const postContainer = document.getElementById('comment-container');
     postContainer.innerHTML = '';
 
     posts.forEach((post) => {
@@ -27,5 +27,4 @@ const displayPost = (posts) => {
         postContainer.append(postCard);
     });
 };
-
 loadPost();

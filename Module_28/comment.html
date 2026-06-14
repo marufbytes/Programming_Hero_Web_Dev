@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment API</title>
+
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 6px 12px;
+        }
+
+        #comment-container {
+            margin-top: 20px;
+        }
+
+        .comment-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .comment-card h2 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .comment-card h4 {
+            font-size: 14px;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>All comments are here</h2>
+    <button onclick="LoadComment()">Load Comments</button>
+
+    <div id="comment-container">
+        <!-- comments will load here -->
+    </div>
+
+    <script src="comment.js"></script>
+</body>
+
+</html>
