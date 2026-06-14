@@ -12,6 +12,7 @@ const loadData=()=>{
       .then(data => console.log(data))
 };
 
+
 // const loadPost=()=>{
 //   const url="https://jsonplaceholder.typicode.com/posts" ;
 
