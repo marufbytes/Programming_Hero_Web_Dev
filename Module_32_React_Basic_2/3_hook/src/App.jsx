@@ -1,12 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useState, Suspense } from 'react'
 import './App.css'
 import Counter from './Counter'
-import Batsman from './Batsman'
+import Users from './Users'
+import Friends from './Friends'
 
+const fetchUsers = fetch('https://jsonplaceholder.typicode.com/users')
+                    .then(res => res.json())
+
+const fetchFriedns =async ()=>{
+  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  return res.json();
+}
 function App() {
+
+  const friendsPromise=fetchFriedns();
+
   const [count, setCount] = useState(0)
 
   function handleClick(){
@@ -18,7 +26,7 @@ function App() {
   }
 
   const handleAdd5=(num)=>{
-    const newNum =num+5;
+    const newNum = num + 5;
     alert(newNum)
   }
 
@@ -26,11 +34,15 @@ function App() {
     <>
       <h3>Vite + React</h3>
 
-      <Batsman></Batsman>
+      <Suspense fallback={<h3>Frineds are coming for treat...</h3>}>
+        <Friends friendsPromise = {friendsPromise} ></Friends>
+      </Suspense>
+
+      <Suspense fallback={<h3>Loading...</h3>}>
+        <Users fetchUsers={fetchUsers}></Users>
+      </Suspense>
 
       <Counter></Counter>
-
-      {/* <button>Click Me</button> */}
 
       <button onClick={handleClick}>Click Me</button>
 
@@ -43,8 +55,6 @@ function App() {
       <button onClick={()=>alert('Click 4!')}>Click Me 4</button>
 
       <button onClick={()=>handleAdd5(5)}>Click Add 5</button>
-
-
     </>
   )
 }
