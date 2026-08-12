@@ -1,0 +1,9 @@
+const Banner = () => {
+    return (
+        <div className="min-h-[60vh] bg-gradient-to-r from-purple-500 to-purple-300">
+            Banner
+        </div>
+    );
+};
+
+export default Banner;
